@@ -1,0 +1,87 @@
+.App {
+  text-align: center;
+  direction: rtl;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* New Styles */
+:root {
+  --primary: #BA3BFC;
+  --secondary: #00C6FF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Navbar */
+nav {
+  width: 100%;
+  padding: 3% 0;
+}
+
+nav img {
+  min-width: 40px;
+  -webkit-user-drag: none;
+  vertical-align: middle;
+
+}
+
+.episodesList {
+  display: grid;
+  grid-template-columns: 24vw 24vw 24vw 24vw;
+  grid-gap: 10px;
+  background-color: #fff;
+  color: #444;
+  justify-content: center;
+}
+
+.EpisodeThumnial {
+  width: 24vw;
+}
+
+.thumbnial {
+  width: 24vw;
+  height: 24vw;
+  object-fit: cover;
+}
+
+.EpisodeThumnial h1 {
+  color: var(--secondary)
+}
+
+@media screen and (max-width: 1024px) {
+  .episodesList {
+    grid-template-columns: 45vw 45vw;
+    grid-gap: 10px;
+  }
+
+  .EpisodeThumnial {
+    width: 45vw;
+  }
+
+  .thumbnial {
+    width: 45vw;
+    height: 45vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  nav {
+    padding: 10% 0;
+  }
+  
+  .episodesList {
+    grid-template-columns: 90VW;
+    grid-gap: 25px;
+  }
+
+  .EpisodeThumnial {
+    width: 90VW;
+  }
+
+  .thumbnial {
+    width: 90VW;
+    height: 90VW;
+  }
+}
