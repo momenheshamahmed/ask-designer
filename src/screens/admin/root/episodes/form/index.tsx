@@ -26,7 +26,7 @@ const AdminEpisodesForm: React.FC = () => {
         inContent: true,
         key: 'audioURL',
         title: 'Audio',
-        type: 'audio',
+        type: 'file',
       },
     ]}
   />);
