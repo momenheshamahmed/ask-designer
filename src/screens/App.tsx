@@ -12,6 +12,8 @@ import Home from './Home/Home';
 import Navbar from '../components/Navbar/Navbar';
 import AdminRoot from './admin/root';
 
+import Landing from './Landing/index'
+
 import { EpisodeStore } from '../stores';
 
 import { getCurrentLanguage, Languages, setCurrentLanguage } from '../utils/translation';
@@ -34,6 +36,9 @@ const App: React.FC = () => {
         </Route>
         <Route exact path="/">
           <Home />
+        </Route>
+        <Route path="/landing">
+          <Landing />
         </Route>
       </Switch>
       </BrowserRouter>
