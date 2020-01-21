@@ -11,10 +11,18 @@ import Footer from './../components/Footer/index'
 // Screens
 import Landing from './Landing/index'
 
+// Messenger 
+import MessengerCustomerChat from 'react-messenger-customer-chat';
+
 const App: React.FC = () => {
     return (
     <div className="App" >
       <BrowserRouter>
+      <MessengerCustomerChat
+        pageId="471125470313114"
+        appId="414050852835880"
+        htmlRef={window.location.pathname}
+      />
       <Navbar />
       <Switch>
         <Route exact path="/">
@@ -22,6 +30,7 @@ const App: React.FC = () => {
         </Route>
       </Switch>
       <Footer />
+
       </BrowserRouter>
     </div>
   );
