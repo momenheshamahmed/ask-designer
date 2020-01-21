@@ -6,7 +6,7 @@ export enum Languages {
   ENGLISH = 'en',
 }
 
-i18n.locale = Languages.ENGLISH;
+i18n.locale = Languages.ARABIC;
 
 export const translate = memoize(
   (key: any, config: any = {}) => i18n.t(key, config),

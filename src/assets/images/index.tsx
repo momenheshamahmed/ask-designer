@@ -1,13 +1,12 @@
 class Images {
-  static footer = require('./footer.svg');
-  static item1 = require('./item1.svg');
-  static intro = require('./intro.svg');
-  static location = require('./location.svg');
   static logo = require('./logo.svg');
-  static person = require('./person.svg');
-  static mainLogo = require('./mainLogo.svg');
-  static toGallery = require('./toGallery.svg');
-  static uploadPlaceholder = require('./uploadPlaceholder.png');
+  static facebook = require('./facebook.svg');
+  static twitter = require('./twitter.svg');
+  static instgram = require('./instagram.svg');
+  static linkedin = require('./linkedin.svg');
+  static email = require('./email.svg');
+  static waves = require('./waves.svg');
+  static devices = require('./devices.svg');
 }
 
 export default Images;

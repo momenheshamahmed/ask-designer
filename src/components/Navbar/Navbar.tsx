@@ -1,14 +1,10 @@
 import React from 'react';
-import logo from '../../assets/logo.svg';
-import { Link, } from 'react-router-dom';
-
+import Assets from '../../assets/index';
 
 const Navbar: React.FC = () => {
     return (
         <nav>
-            <Link to="/">
-                <img src={logo} alt="Ask Designer Logo" />                
-            </Link>
+            <img src={ Assets.Images.logo } alt="Ask Designer Logo" />                
         </nav>
     );
   };

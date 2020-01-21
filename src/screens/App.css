@@ -1,9 +1,6 @@
 .App {
   text-align: center;
-  direction: rtl;
-  overflow: hidden;
-  width: 100%;
-}
+  overflow: hidden;}
 
 /* New Styles */
 :root {
@@ -18,70 +15,133 @@
 /* Navbar */
 nav {
   width: 100%;
-  padding: 3% 0;
+  padding: 5vh 0;
+  background-color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+
 }
 
 nav img {
-  min-width: 40px;
+  height: 60px;
   -webkit-user-drag: none;
-  vertical-align: middle;
-
 }
 
-.episodesList {
-  display: grid;
-  grid-template-columns: 24vw 24vw 24vw 24vw;
-  grid-gap: 10px;
-  background-color: #fff;
-  color: #444;
+/* Landing & it's Sections */
+.container {
+  width: 80%;
+  text-align: left;
+  margin: 0 auto;
+}
+.section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+}
+.sectionText {
+  width: 50%;
+}
+.sectionText h1 {
+  color: var(--primary);
+  font-weight: bold;
+}
+.sectionText p {
+  color: #B2B2B2;
+  width: 70%;
+}
+.sectionImg {
+  width: 50%;
+  position: relative;
+  text-align: center;
+}
+.sectionImg img {
+  object-fit: contain;
+}
+.sectionBtn {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: var(--secondary);
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  padding: 1% 10%;
+  font-weight: bold;
+  border-radius: 100px;
+  text-decoration: none;
+  width: 35%;
+}
+
+/* Fotoer */
+#myFooter {
+  position: fixed;
+  bottom: 0;
+  background: white;
+  width: 100%;
+}
+.footerList {
+  list-style: none;
+  display: flex;
+  align-items: center;
   justify-content: center;
+  padding: 0;
 }
-
-.EpisodeThumnial {
-  width: 24vw;
+.footerList li {
+  width: 15%;
 }
-
-.thumbnial {
-  width: 24vw;
-  height: 24vw;
-  object-fit: cover;
+.footerList li a {
+  text-decoration: none;
 }
-
-.EpisodeThumnial h1 {
-  color: var(--secondary)
+.footerList li a img {
+  height: 24px;
 }
-
-@media screen and (max-width: 1024px) {
-  .episodesList {
-    grid-template-columns: 45vw 45vw;
-    grid-gap: 10px;
+@media screen and (max-width: 1200px) {
+  .section {
+    flex-wrap: wrap;
+    height: auto;
+    text-align: center;
   }
-
-  .EpisodeThumnial {
-    width: 45vw;
+  .sectionText {
+    order: 2;
+    margin: 0 auto;
   }
-
-  .thumbnial {
-    width: 45vw;
-    height: 45vw;
+  .sectionText p {
+    width: 100%;
+  }
+  .sectionImg {
+    width: 100%;
+    order: 1
+  }
+  .sectionImg img {
+    width: 40%
   }
 }
 @media screen and (max-width: 500px) {
   nav {
     padding: 10% 0;
   }
-  
-  .episodesList {
-    grid-template-columns: 90VW;
-    grid-gap: 25px;
-  }
+  .sectionText {
+    width: 100%;
+    text-align: left;
 
-  .EpisodeThumnial {
-    width: 90VW;
   }
+  .sectionText p {
+    width: 100%;
+  }
+  .sectionImg {
+    width: 100%;
 
-  .thumbnial {
-    width: 90VW;
-    height: 90VW;
+  }
+  .sectionImg img {
+    width: 100%
+  }
+  .sectionBtn {
+    padding: 5% 10%;
+    bottom: 25px;
+    width: 60%
   }
 }

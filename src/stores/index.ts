@@ -1,7 +1,5 @@
 import AuthStoreInstance from './Auth';
-import StorageStoreInstance from './Storage';
-import EpisodeStoreInstance from './Episodes';
+import AboutStoreInstance from './About';
 
 export const AuthStore = AuthStoreInstance;
-export const EpisodeStore = EpisodeStoreInstance;
-export const StorageStore = StorageStoreInstance;
+export const AboutStore = AboutStoreInstance;
