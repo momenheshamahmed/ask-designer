@@ -10,6 +10,7 @@ import Navbar from './../components/Navbar/Navbar';
 import Footer from './../components/Footer/index'
 // Screens
 import Landing from './Landing/index'
+import NotFound from './NotFound/index'
 
 // Messenger 
 import MessengerCustomerChat from 'react-messenger-customer-chat';
@@ -27,6 +28,9 @@ const App: React.FC = () => {
       <Switch>
         <Route exact path="/">
           <Landing />
+        </Route>
+        <Route>
+          <NotFound />
         </Route>
       </Switch>
       <Footer />

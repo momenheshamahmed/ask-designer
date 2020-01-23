@@ -7,6 +7,8 @@ class Images {
   static email = require('./email.svg');
   static waves = require('./waves.svg');
   static devices = require('./devices.svg');
+  static NotFound = require('./NotFound.svg');
+
 }
 
 export default Images;

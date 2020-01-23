@@ -59,11 +59,7 @@ nav img {
 .sectionImg img {
   object-fit: contain;
 }
-.sectionBtn {
-  position: absolute;
-  bottom: 10%;
-  left: 0;
-  right: 0;
+.sectionBtn, .NotFound a {
   margin: 0 auto;
   background-color: var(--secondary);
   color: white;
@@ -75,7 +71,12 @@ nav img {
   text-decoration: none;
   width: 35%;
 }
-
+.sectionBtn {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+}
 /* Fotoer */
 #myFooter {
   position: fixed;
@@ -99,6 +100,24 @@ nav img {
 .footerList li a img {
   height: 24px;
 }
+
+/*  Not Found Page */
+.NotFound {
+  width: 100%;
+  height: 60vh;
+  text-align: center;
+  align-items: center;  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+.NotFound img {
+  width: 50vh;
+}
+.NotFound a {
+  display: block;
+}
 @media screen and (max-width: 1200px) {
   .section {
     flex-wrap: wrap;
@@ -118,6 +137,9 @@ nav img {
   }
   .sectionImg img {
     width: 40%
+  }
+  .NotFound img {
+    width: 30vh
   }
 }
 @media screen and (max-width: 500px) {
@@ -139,9 +161,11 @@ nav img {
   .sectionImg img {
     width: 100%
   }
-  .sectionBtn {
+  .sectionBtn, .NotFound a {
     padding: 5% 10%;
-    bottom: 25px;
     width: 60%
+  }
+  .sectionBtn {
+    bottom: 25px;
   }
 }
