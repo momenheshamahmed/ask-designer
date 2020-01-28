@@ -16,7 +16,7 @@ const TextH1P: React.FC<Props> = (props) => {
                 {
                     (props.button.text !== '' && props.button.url !== '') 
                     ? 
-                    <a className="sectionBtn" target="_blank" href={props.button.url} rel="noopener noreferrer"> 
+                    <a className="sectionBtn" target="_blank" href={props.button.url} > 
                         { props.button.text }
                     </a>
                     :

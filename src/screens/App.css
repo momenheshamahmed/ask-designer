@@ -143,6 +143,9 @@ nav img {
   }
 }
 @media screen and (max-width: 500px) {
+  .App {
+    padding: 4% 0;
+  }
   nav {
     padding: 10% 0;
   }
