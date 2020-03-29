@@ -100,7 +100,10 @@ nav img {
 .footerList li a img {
   height: 24px;
 }
-
+#contactFooter {
+  color: #BA3BFC;
+  
+}
 /*  Not Found Page */
 .NotFound {
   width: 100%;

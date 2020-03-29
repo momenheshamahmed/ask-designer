@@ -10,6 +10,7 @@ import Navbar from './../components/Navbar/Navbar';
 import Footer from './../components/Footer/index'
 // Screens
 import Landing from './Landing/index'
+import Contact from './Contact/index'
 import NotFound from './NotFound/index'
 
 // Messenger 
@@ -28,6 +29,9 @@ const App: React.FC = () => {
       <Switch>
         <Route exact path="/">
           <Landing />
+        </Route>
+        <Route exact path="/contact">
+          <Contact />
         </Route>
         <Route>
           <NotFound />

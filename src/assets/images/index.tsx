@@ -8,6 +8,7 @@ class Images {
   static waves = require('./waves.svg');
   static devices = require('./devices.svg');
   static NotFound = require('./NotFound.svg');
+  static Opinion = require('./Opinion.png');
 
 }
 
